@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Video Invite</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        .container {
+            width: 700px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h2 {
+            color: darkgreen;
+        }
+
+        video {
+            border: 4px solid green;
+            border-radius: 10px;
+        }
+
+        #message {
+            color: green;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        input {
+            width: 80%;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Community Event Nature Promo Video</h2>
+
+        <video width="600"
+               controls
+               oncanplay="videoReady()">
+
+            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                    type="video/mp4">
+
+            Your browser does not support HTML5 video.
+
+        </video>
+
+        <p id="message"></p>
+
+        <input type="text"
+               id="name"
+               placeholder="Enter your name before leaving page">
+
+    </div>
+
+    <script>
+
+        function videoReady() {
+            document.getElementById("message").innerHTML =
+                "✅ Video ready to play!";
+        }
+
+        window.onbeforeunload = function () {
+
+            let name = document.getElementById("name").value;
+
+            if (name.trim() !== "") {
+                return "You have unsaved changes. Are you sure you want to leave?";
+            }
+        };
+
+    </script>
+
+</body>
+
+</html>

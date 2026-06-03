@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+
+    <style>
+
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+
+        .form-container {
+            width: 400px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h2 {
+            text-align: center;
+            color: blue;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+
+        output {
+            color: green;
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+
+        <h2>Community Event Registration</h2>
+
+        <form onsubmit="showMessage(); return false;">
+
+            <!-- Name -->
+            <label>Full Name</label>
+            <input type="text"
+                   placeholder="Enter your name"
+                   required
+                   autofocus>
+
+            <!-- Email -->
+            <label>Email</label>
+            <input type="email"
+                   placeholder="Enter your email"
+                   required>
+
+            <!-- Date -->
+            <label>Event Date</label>
+            <input type="date"
+                   required>
+
+            <!-- Event Type -->
+            <label>Event Type</label>
+
+            <select required>
+                <option value="">Select Event</option>
+                <option>Health Camp</option>
+                <option>Food Festival</option>
+                <option>Sports Event</option>
+                <option>Music Program</option>
+            </select>
+
+            <!-- Message -->
+            <label>Message</label>
+
+            <textarea rows="4"
+                      placeholder="Enter your message">
+            </textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">
+                Register
+            </button>
+
+            <!-- Output Message -->
+            <output id="result"></output>
+
+        </form>
+
+    </div>
+
+    <script>
+
+        function showMessage() {
+            document.getElementById("result").innerHTML =
+                "Registration Successful!";
+        }
+
+    </script>
+
+</body>
+
+</html>
