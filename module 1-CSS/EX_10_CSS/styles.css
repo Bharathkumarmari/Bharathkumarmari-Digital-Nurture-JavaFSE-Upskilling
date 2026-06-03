@@ -1,0 +1,80 @@
+/* Page Layout */
+body {
+    margin: 0;
+    width: 100%;
+}
+
+/* Navigation Menu */
+.navMenu {
+    list-style: none;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.navMenu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Banner */
+.banner {
+    height: 20vh;
+    text-align: center;
+}
+
+/* Responsive Image */
+img {
+    width: 30vw;
+    height: auto;
+}
+
+/* Flexbox Layout */
+.container {
+    display: flex;
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+.eventCard {
+    width: 50%;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+
+    /* Stack navigation vertically */
+    .navMenu li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Reduce font size */
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    /* Reduce image size */
+    img {
+        width: 60vw;
+    }
+
+    /* Stack cards vertically */
+    .container {
+        flex-direction: column;
+    }
+
+    .eventCard {
+        width: 100%;
+    }
+}

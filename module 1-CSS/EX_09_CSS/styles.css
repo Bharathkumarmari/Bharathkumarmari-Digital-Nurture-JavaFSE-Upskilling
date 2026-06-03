@@ -1,0 +1,10 @@
+/* Community Bulletin Section */
+.newsArticle {
+    column-count: 2;
+    column-gap: 30px;
+    column-rule: 1px solid gray;
+
+    padding: 15px;
+    border: 1px solid black;
+    margin: 20px;
+}

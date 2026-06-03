@@ -1,0 +1,32 @@
+/* Background image with fallback color */
+body {
+    background-color: #f0f0f0;
+    background-image: url(background.jpg);
+    background-size: cover;
+}
+
+/* Gradient header */
+.sectionHeader {
+    background: linear-gradient(to right, blue, lightblue);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* HEX color for text */
+h2 {
+    color: #0066cc;
+}
+
+/* RGBA background color */
+.eventCard {
+    background-color: rgba(0, 128, 255, 0.2);
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+/* Paragraph style */
+p {
+    color: #333333;
+}

@@ -1,0 +1,22 @@
+/* Event Card */
+.eventCard {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    background-color: lightgray;
+}
+
+/* Highlighted Form Field */
+.selectedField {
+    outline: 3px solid blue;
+}
+
+/* Visibility Hidden */
+.hiddenText {
+    visibility: hidden;
+}
+
+/* Display None */
+.noneText {
+    display: none;
+}

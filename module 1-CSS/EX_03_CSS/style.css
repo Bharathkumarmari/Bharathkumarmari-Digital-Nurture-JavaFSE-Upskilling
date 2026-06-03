@@ -1,0 +1,30 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ID Selector */
+#mainHeader {
+    background-color: lightblue;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Element Selector */
+h2 {
+    color: blue;
+    margin: 10px 0;
+}
+
+/* Class Selector */
+.eventCard {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Grouping Selector */
+h3, p {
+    color: green;
+}
